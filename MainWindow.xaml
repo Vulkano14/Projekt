@@ -1,0 +1,42 @@
+﻿<Window x:Class="Projekt_Programowaniev2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_Programowaniev2"
+        mc:Ignorable="d"
+        Title="Projekt CRUD in C#" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF7896FA" Offset="0"/>
+                <GradientStop Color="#FFFACACA" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Label x:Name="Marka" Content="Marka" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label x:Name="Procesor" Content="Procesor" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label x:Name="Karta_Graficzna" Content="Karta Graficzna" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label x:Name="Ram" Content="Pamięć Ram" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label x:Name="Waga" Content="Waga" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBox x:Name="markapole" HorizontalAlignment="Left" Margin="109,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FFEAEAEA"/>
+        <TextBox x:Name="procesorpole" HorizontalAlignment="Left" Margin="109,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FFEAEAEA"/>
+        <TextBox x:Name="kartapole" HorizontalAlignment="Left" Margin="109,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FFEAEAEA"/>
+        <TextBox x:Name="pamiecpole" HorizontalAlignment="Left" Margin="109,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FFEAEAEA"/>
+        <TextBox x:Name="wagapole" HorizontalAlignment="Left" Margin="109,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FFEAEAEA"/>
+        <DataGrid x:Name="datagrid" Margin="10,217,10,10">
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF9D9D"/>
+                    <GradientStop Color="#FF869DFF" Offset="1"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
+        </DataGrid>
+        <Button x:Name="dodajprz" Content="Dodaj" HorizontalAlignment="Left" Margin="291,17,0,0" VerticalAlignment="Top" Height="46" Width="109" Background="#FFBD9EF7" Click="dodajprz_Click" BorderBrush="#FF2200FF" FontSize="20" FontFamily="Arial"/>
+        <Button x:Name="usunprz" Content="Usuń" HorizontalAlignment="Left" Margin="430,17,0,0" VerticalAlignment="Top" Height="46" Width="109" Background="#FFBD9EF7" Click="usunprz_Click" BorderBrush="#FF2200FF" FontSize="20" FontFamily="Arial"/>
+        <Button x:Name="aktualizujprz" Content="Aktualizuj" HorizontalAlignment="Left" Margin="291,107,0,0" VerticalAlignment="Top" Height="46" Width="109" Background="#FFBD9EF7" Click="aktualizujprz_Click" BorderBrush="#FF2200FF" FontSize="20" FontFamily="Arial"/>
+        <Button x:Name="wyczyscprz" Content="Wyczyść" HorizontalAlignment="Left" Margin="430,107,0,0" VerticalAlignment="Top" Height="46" Width="109" Background="#FFBD9EF7" Click="wyczyscprz_Click" BorderBrush="#FF2200FF" FontSize="20" FontFamily="Arial"/>
+        <Label x:Name="Szukanie" Content="Wybierz ID, które chcesz edytować" HorizontalAlignment="Left" Margin="74,178,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="szukaniepole" HorizontalAlignment="Left" Margin="333,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" Height="24" Background="#FFEDEDED" SelectionBrush="#FF94423F"/>
+
+    </Grid>
+</Window>
